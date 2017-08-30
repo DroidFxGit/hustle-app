@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="hustle_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="darkBlueBG" translatesAutoresizingMaskIntoConstraints="NO" id="8gh-Sq-WR2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ce5-e7-Gm4">
+                                <rect key="frame" x="139.5" y="285.5" width="96" height="96"/>
+                                <state key="normal" image="powerButton"/>
+                                <connections>
+                                    <segue destination="8rY-0e-Smc" kind="presentation" id="YvC-Lp-Y4l"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8gh-Sq-WR2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="69" id="5YF-aW-UBk"/>
+                            <constraint firstItem="Ce5-e7-Gm4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="A0d-24-8Nv"/>
+                            <constraint firstItem="8gh-Sq-WR2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Esx-aX-A0c"/>
+                            <constraint firstItem="Ce5-e7-Gm4" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-10" id="RHN-cT-jzz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="8gh-Sq-WR2" secondAttribute="top" constant="20" id="Re9-Th-Umb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8gh-Sq-WR2" secondAttribute="trailing" id="cyZ-dT-JkZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="155.17241379310346"/>
+        </scene>
+        <!--Hustle View Controller-->
+        <scene sceneID="nmJ-Xw-SuO">
+            <objects>
+                <viewController id="8rY-0e-Smc" customClass="HustleViewController" customModule="hustle_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4nP-jt-Dio">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rocketAndStream" translatesAutoresizingMaskIntoConstraints="NO" id="mVz-dV-kER">
+                                <rect key="frame" x="0.0" y="408" width="375" height="520"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudsAndOrangeOval" translatesAutoresizingMaskIntoConstraints="NO" id="hx7-BK-pEI">
+                                <rect key="frame" x="0.0" y="266" width="375" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="c59-XA-kjk"/>
+                                </constraints>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HUSTLE MODE:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3K-Ur-9zX">
+                                <rect key="frame" x="51" y="418" width="273" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jgq-nX-b2Z">
+                                <rect key="frame" x="77" y="494" width="221" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="75"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23921568627450979" green="0.56862745098039214" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Eql-iL-djv" firstAttribute="bottom" secondItem="hx7-BK-pEI" secondAttribute="bottom" constant="1" id="Bw8-Um-r9d"/>
+                            <constraint firstItem="Eql-iL-djv" firstAttribute="trailing" secondItem="hx7-BK-pEI" secondAttribute="trailing" id="Zas-Ef-SpE"/>
+                            <constraint firstItem="hx7-BK-pEI" firstAttribute="leading" secondItem="Eql-iL-djv" secondAttribute="leading" id="vwc-Iw-QZz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Eql-iL-djv"/>
+                    </view>
+                    <connections>
+                        <outlet property="cloudHolder" destination="hx7-BK-pEI" id="dgq-hB-73c"/>
+                        <outlet property="hustleLabel" destination="r3K-Ur-9zX" id="nVy-JT-pft"/>
+                        <outlet property="rocket" destination="mVz-dV-kER" id="VW1-xn-QLs"/>
+                        <outlet property="statusLabel" destination="Jgq-nX-b2Z" id="6n5-hs-3dc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yce-fs-A9F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888.79999999999995" y="154.27286356821591"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloudsAndOrangeOval" width="414" height="477"/>
+        <image name="darkBlueBG" width="414" height="736"/>
+        <image name="powerButton" width="96" height="96"/>
+        <image name="rocketAndStream" width="414" height="672"/>
+    </resources>
+</document>
